@@ -15,15 +15,13 @@
     <meta name="referrer" content="origin">
     <title>Owl Carrousel for Testing</title>
 
-
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter:400,400italic,700">
     <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/owl-carousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/owl-carousel/css/owl.theme.green.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css?v=<?php echo time(); ?>">
 </head>
 
 <body class="credit">
