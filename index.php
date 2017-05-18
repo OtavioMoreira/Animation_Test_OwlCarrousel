@@ -26,42 +26,45 @@
 
 <body class="credit">
 <main>
-    <section id="owl-page-sync1" class="owl owl-carousel owl-theme text-center">
-        <article class="item" item="home">
-            <div class="container">
-                <div class="row">
-                    <h3>Owl Tester</h3>
+    <section>
+        <ul id="owl-page-sync1" class="owl-carousel owl-theme text-center no-style-list">
+            <li class="item" item="home">
+                <div class="container">
+                    <div class="row">
+                        <h3>Owl Tester</h3>
 
-                    <div class="profile" itemscope itemtype="http://schema.org/Person">
-                        <div class="align">
-                            <img src="assets/img/teste.png" width="150" height="150" alt="Otávio Moreira"
-                                 itemprop="image">
+                        <div class="profile" itemscope itemtype="http://schema.org/Person">
+                            <div class="align">
+                                <img src="assets/img/teste.png" width="150" height="150" alt="Otávio Moreira"
+                                     itemprop="image">
+                            </div>
+
+                            <h1 class="name" itemprop="name"><span>Otávio</span><span>Moreira</span></h1>
                         </div>
 
-                        <h1 class="name" itemprop="name"><span>Otávio</span><span>Moreira</span></h1>
-                    </div>
-
-                    <div class="about-me">
-                        <a target="_blank" href="http://www.matera.com/br/2016/02/04/o-que-e-um-front-end-developer/">
-                            <h2>Front-End Developer</h2>
-                        </a>
+                        <div class="about-me">
+                            <a target="_blank"
+                               href="http://www.matera.com/br/2016/02/04/o-que-e-um-front-end-developer/">
+                                <h2>Front-End Developer</h2>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </article>
+            </li>
 
-        <article class="item" item="animation">
-            Animation
-        </article>
+            <li class="item" item="animation">
+                Animation
+            </li>
+        </ul>
     </section>
 
     <section id="menu-projects" class="text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <ul id="owl-page-sync2" class="owl owl-carousel owl-theme text-center links">
-                        <li class="text" data-item="animation">Home</li>
-                        <li class="text" data-item="animation">Animation</li>
+                    <ul id="owl-page-sync2" class="owl-carousel owl-theme text-center links no-style-list">
+                        <li class="text item active" data-item="home">Home</li>
+                        <li class="text item" data-item="animation">Animation</li>
                     </ul>
                 </div>
             </div>
@@ -117,8 +120,8 @@
 
 
 <script type="text/javascript" src="assets/plugins/jquery/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/default.js"></script>
 
 </body>

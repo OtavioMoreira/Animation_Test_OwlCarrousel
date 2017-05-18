@@ -346,7 +346,7 @@ a {
     outline: none;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
-}.links .text:hover, .links .text:focus {
+}.links .text:hover, .links .text:focus, #owl-page-sync2 .active.text {
      color: #3c0000;
      text-decoration: none;
      text-shadow: 0 0 30px rgba(239, 237, 237, 0.8);
@@ -394,7 +394,7 @@ footer {
 }
 
 #copyright {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #menu-projects {
