@@ -1,3 +1,36 @@
+@font-face{
+    font-family: 'regular';
+    src:
+            url("../font/Bitter-Regular.woff") format("woff"),
+            url("../font/Bitter-Regular.woff2") format("woff2"),
+            url("../font/Bitter-Regular.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'regular';
+    src:
+            url("../font/Bitter-Bold.woff") format("woff"),
+            url("../font/Bitter-Bold.woff2") format("woff2"),
+            url("../font/Bitter-Bold.eot?#iefix") format("embedded-opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'italic';
+    src:
+            url("../font/Bitter-Italic.woff") format("woff"),
+            url("../font/Bitter-Italic.woff2") format("woff2"),
+            url("../font/Bitter-Italic.eot?#iefix") format("embedded-opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+.f-italic {
+    font-family: 'italic';
+}
 
 [none] {
     display: none;
@@ -190,7 +223,7 @@ img.full-width {
     }
 
     50% {
-        box-shadow: 0 0 60px rgba(86, 70, 70, 0.8);
+        box-shadow: 0 0 60px rgba(34, 37, 86, 0.8);
     }
 
     100% {
@@ -199,14 +232,17 @@ img.full-width {
 }
 
 html {
-    background: #badbc9 url('../img/bg.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: #4996d1;
+    background: -moz-linear-gradient(-45deg, #4996d1 36%, #104a77 100%);
+    background: -webkit-linear-gradient(-45deg, #4996d1 36%,#104a77 100%);
+    background: linear-gradient(135deg, #4996d1 36%,#104a77 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4996d1', endColorstr='#104a77',GradientType=1 );
 }
 
 body {
     background: none;
     color: #fff;
-    font-family: Bitter, 'Helvetica Neue';
+    font-family: 'regular';
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
     font-weight: 300;
@@ -346,10 +382,10 @@ a {
     outline: none;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
-}.links .text:hover, .links .text:focus, #owl-page-sync2 .active.text {
-     color: #3c0000;
+}.links .text:hover, .links .text:focus, .links .text.active {
+     color: #3ccbff;
      text-decoration: none;
-     text-shadow: 0 0 30px rgba(239, 237, 237, 0.8);
+
 }
 
 .more {
@@ -368,21 +404,85 @@ a {
     opacity: 0;
     outline: none;
     transition: all 0.6s ease-out;
-    -webkit-transition: all 0.6s ease-out;
+    -webkit-transition: all 0.2s ease-out;
 }
 
 .about-me a:hover, .about-me a:focus {
-    color: #3c0000;
+    color: #3ccbff;
     text-decoration: none;
-    text-shadow: 0 0 30px rgba(239, 237, 237, 0.8);
+}
+
+.about-me a h2 {
+    display: inline-block;
+    font-weight: normal;
+}
+
+textarea.form-control {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    max-height: 200px;
 }
 
 .credit.activate .about-me a {
     opacity: 1;
 }
 
+#myModal .btn-primary {
+    background: #438dc5;
+    border-color: #438dc5;
+}
+
+#myModal .btn {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+#myModal .modal-footer {
+    border: none;
+    display: inline-block;
+    width: 100%;
+}
+
+#myModal .form-sucess {
+    background: rgba( 255, 255, 255, .7 );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 60px;
+    display: none;
+}
+
+#myModal .form-sucess .loader,
+#myModal .form-sucess .sucess,
+#myModal .form-sucess .error {
+    display: none;
+}
+
+#myModal .form-sucess .sucess,
+#myModal .form-sucess .error {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+#myModal .form-sucess i {
+    font-size: 70px;
+    color: #4996d1;
+}
+
 #owl-page-sync1 .profile img {
     width: auto;
+}
+
+#myModal {
+    color: black;
+}
+
+#myModal form label {
+    font-weight: normal;
 }
 
 footer {
@@ -398,7 +498,93 @@ footer {
 }
 
 #menu-projects {
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.loader {
+    color: #4996d1;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 15vh;
+    opacity: 0.8;
+}
+
+.loader span {
+    display: inline-block;
+    animation: pulse_loader 0.4s alternate infinite ease-in-out;
+}
+
+.loader span:nth-child(odd) {
+    animation-delay: 0.4s;
+}
+
+.effect-carrousel .item {
+    height: 10rem;
+    background: #162c3e;
+    padding: 1rem;
+    padding: 20px 30px;
+}
+
+#owl-page-sync1 .ajust {
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+.effect-carrousel .item h4 {
+    color: #FFF;
+    font-weight: 500;
+    margin-top: 0rem;
+}
+
+.effect-carrousel.owl-theme .owl-dots .owl-dot span {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.effect-carrousel.owl-theme .owl-dots .owl-dot.active span,
+.effect-carrousel.owl-theme .owl-dots .owl-dot:hover span {
+    background: #162c3e;
+}
+
+.effect-carrousel.owl-theme .owl-nav [class*="owl-"] {
+    color: black;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.effect-carrousel.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: #162c3e;
+    color: white;
+}
+
+#owl-page-sync1 [item="animation"] .container {
+    margin-top: 150px;
+}
+
+#owl-page-sync1 [item="animation"] .container h3 {
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.btn-animate {
+    background: #58acec;
+    width: 100%;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.btn-animate:hover,
+.btn-animate:focus {
+    color: white;
+}
+
+@keyframes pulse_loader {
+    to {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
 }
 
 @media (max-width: 767px) {
