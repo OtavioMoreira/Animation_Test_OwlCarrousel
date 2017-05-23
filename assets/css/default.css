@@ -606,11 +606,14 @@ footer {
     }
 }
 
-@media ( max-width: 1300px ) {
-    #menu-projects,
+@media ( max-width: 1400px ) {
     #owl-page-sync1 .container,
     #owl-page-sync1 [item="animation"] .container {
         margin-top: 15px;
+    }
+
+    #menu-projects {
+        margin-top: 0;
     }
 }
 
