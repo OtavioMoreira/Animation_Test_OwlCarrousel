@@ -1,5 +1,6 @@
-var obj_animteIn = $('#animateIn').val();
-var obj_animteOut = $('#animateOut').val();;
+var obj_animateIn = $('#animateIn').val();
+var obj_animateOut = $('#animateOut').val();
+var $owl = $('.effect-carrousel');
 
 $(document).ready(function () {
     $('#owl-page-sync1').owlCarousel({
@@ -25,9 +26,34 @@ $(document).ready(function () {
         $('body, html').css('height', height_window + 'px');
     }
 
-    $('.effect-carrousel').owlCarousel({
-        animateOut: 'slideOutDown',
-        animateIn: 'flipInX',
+    owl_effect(obj_animateOut, obj_animateIn);
+});
+
+
+$('#animateIn').change(function () {
+    obj_animateIn = $(this).val();
+});
+
+$('#animateOut').change(function () {
+    obj_animateOut = $(this).val();
+});
+
+$('.btn-animate').click(function () {
+    $owl.each(function () {
+        $(this).owlCarousel('destroy');
+    });
+
+    $(document).ready(function () {
+        owl_effect(obj_animateOut, obj_animateIn);
+    });
+
+    $('.return-sucess h4').fadeIn(800).fadeOut(1200);
+});
+
+function owl_effect( obj_animateOut, obj_animateIn) {
+    $owl.owlCarousel({
+        animateOut: obj_animateOut,
+        animateIn: obj_animateIn,
         items: 1,
         margin: 30,
         dots: true,
@@ -35,17 +61,7 @@ $(document).ready(function () {
         stagePadding: 30,
         smartSpeed: 450
     });
-});
-
-$('#animateIn').change(function () {
-    obj_animteIn = $(this).val();
-});
-
-$('#animateOut').change(function () {
-    obj_animteOut = $(this).val();
-});
-
-//alert( obj_animteIn + ', ' + obj_animteOut);
+}
 
 function send_email() {
     //load
@@ -60,7 +76,7 @@ function send_email() {
             $('#myModal .form-sucess .loader').fadeOut('fast');
             $('#myModal .form-sucess .sucess').fadeIn('');
 
-            setTimeout(function(){
+            setTimeout(function () {
                 $('#myModal .form-sucess .sucess, #myModal .form-sucess').fadeOut('');
             }, 3000);
 
@@ -69,7 +85,7 @@ function send_email() {
         $('#myModal .form-sucess .loader').hide('');
         $('#myModal .form-sucess .error').fadeIn('');
 
-        setTimeout(function(){
+        setTimeout(function () {
             $('#myModal .form-sucess .error, #myModal .form-sucess').fadeOut('');
         }, 3000);
 

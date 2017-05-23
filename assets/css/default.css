@@ -398,7 +398,7 @@ a {
     padding-right: 0;
 }
 
-.about-me a {
+.about-me h2 {
     font-size: 25px;
     margin-top: 30px;
     opacity: 0;
@@ -407,12 +407,7 @@ a {
     -webkit-transition: all 0.2s ease-out;
 }
 
-.about-me a:hover, .about-me a:focus {
-    color: #3ccbff;
-    text-decoration: none;
-}
-
-.about-me a h2 {
+.about-me h2 {
     display: inline-block;
     font-weight: normal;
 }
@@ -424,7 +419,7 @@ textarea.form-control {
     max-height: 200px;
 }
 
-.credit.activate .about-me a {
+.credit.activate .about-me h2 {
     opacity: 1;
 }
 
@@ -519,9 +514,8 @@ footer {
 }
 
 .effect-carrousel .item {
-    height: 10rem;
+    height: 15rem;
     background: #162c3e;
-    padding: 1rem;
     padding: 20px 30px;
 }
 
@@ -558,7 +552,7 @@ footer {
 }
 
 #owl-page-sync1 [item="animation"] .container {
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 #owl-page-sync1 [item="animation"] .container h3 {
@@ -569,6 +563,9 @@ footer {
 .btn-animate {
     background: #58acec;
     width: 100%;
+    outline: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
 
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -578,6 +575,25 @@ footer {
 .btn-animate:hover,
 .btn-animate:focus {
     color: white;
+    background: #81c9ff;
+}
+
+.return-sucess {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15rem;
+    padding: 0 30px;
+    z-index: 2;
+}
+
+.return-sucess h4 {
+    margin: 0;
+    line-height: 15rem;
+    vertical-align: middle;
+    display: none;
+    background: rgba( 255, 255, 255, .4 );
 }
 
 @keyframes pulse_loader {

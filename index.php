@@ -44,10 +44,7 @@
                         </div>
 
                         <div class="about-me">
-                            <a target="_blank"
-                               href="http://www.matera.com/br/2016/02/04/o-que-e-um-front-end-developer/">
-                                <h2>Front-End Developer</h2>
-                            </a>
+                            <h2>Front-End Developer</h2>
                         </div>
                     </div>
                 </div>
@@ -57,12 +54,19 @@
                 <div class="container">
                     <h3 class="text-center">Animations</h3>
 
-                    <div class="owl effect-carrousel owl-carousel owl-theme">
-                        <?php for ($x = 1; $x < 5; $x++) { ?>
-                            <div class="item text-left">
-                                <h4><?php echo $x; ?></h4>
+                    <div class="relative-position">
+                        <div class="owl effect-carrousel owl-carousel owl-theme">
+                            <?php for ($x = 1; $x < 5; $x++) { ?>
+                                <div class="item text-left">
+                                    <h4><?php echo $x; ?></h4>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="sizin">
+                            <div class="return-sucess">
+                                <h4>Updated animation</h4>
                             </div>
-                        <?php } ?>
+                        </div>
                     </div>
 
                     <div class="row ajust">
