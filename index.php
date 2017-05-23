@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="row ajust">
-                        <div class="col-md-4">
+                        <div class="col-xs-6 col-md-4">
                             <select class="form-control" id="animateIn">
                                 <optgroup label="Attention Seekers">
                                     <option value="bounce">bounce</option>
@@ -192,7 +192,7 @@
                             </select>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-xs-6 col-md-4">
                             <select class="form-control" id="animateOut">
                                 <optgroup label="Attention Seekers">
                                     <option value="bounce">bounce</option>
@@ -314,7 +314,7 @@
                             </select>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-xs-12 col-md-4">
                             <button class="btn btn-animate">Change Values</button>
                         </div>
                     </div>

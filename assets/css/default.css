@@ -603,10 +603,39 @@ footer {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+    footer {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    #owl-page-sync1 .ajust {
+        margin-top: 0;
+    }
+
+    #menu-projects,
+    #owl-page-sync1 .container,
+    #owl-page-sync1 [item="animation"] .container {
+        margin-top: 15px;
+    }
+
+    #owl-page-sync1 [item="animation"] .container h3 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px ) {
+    html {
+        height: auto;
+    }
+
     .profile .name {
         font-size: 40px;
         top: 40px;
+    }
+
+    #copyright {
+        margin-bottom: 60px;
     }
 }
 
@@ -627,6 +656,10 @@ footer {
     h3 {
         font-size: 30px;
         line-height: 20px;
+    }
+
+    html {
+        height: auto;
     }
 
     .container {
