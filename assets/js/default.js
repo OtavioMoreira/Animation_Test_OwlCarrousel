@@ -47,7 +47,7 @@ $('.btn-animate').click(function () {
         owl_effect(obj_animateOut, obj_animateIn);
     });
 
-    $('.return-sucess h4').fadeIn(800).fadeOut(1200);
+    $owl.trigger('next.owl.carousel');
 });
 
 function owl_effect( obj_animateOut, obj_animateIn) {
