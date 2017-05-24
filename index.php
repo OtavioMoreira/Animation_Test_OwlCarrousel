@@ -335,28 +335,28 @@
                                     Js
                                 </div>
 
-                                <div class="box">
+                                <div class="box effect">
                                     Copy
                                 </div>
                             </div>
 
-                            <p>
+                            <p class="text-code">
                                 <span class="cifrao">$</span>(<span class="string">'.owl-carrousel'</span>).<span
                                     class="virgula">owlCarousel</span>({<br>
 
-                            <div class="spacing">
-                                <span class="option">animateOut</span>: <span class="string"
-                                                                              animateOut></span>,<br>
-                                <span class="option">animateIn</span>: <span class="string"
-                                                                             animateIn></span>,<br>
-                                <span class="option">items</span>: <span class="result">1</span>,<br>
-                                <span class="option">margin</span>: <span class="result">30</span>,<br>
-                                <span class="option">dots</span>: <span class="result">true</span>,<br>
-                                <span class="option">nav</span>: <span class="result">true</span>,<br>
-                                <span class="option">stagePadding</span>: <span class="result">30</span>,<br>
-                                <span class="option">smartSpeed</span>: <span class="result">450</span><br>
-                            </div>
-                            });
+                                <span class="spacing">
+                                    <span class="option">animateOut</span>: <span class="string"
+                                                                                  animateOut></span>,<br>
+                                    <span class="option">animateIn</span>: <span class="string"
+                                                                                 animateIn></span>,<br>
+                                    <span class="option">items</span>: <span class="result">1</span>,<br>
+                                    <span class="option">margin</span>: <span class="result">30</span>,<br>
+                                    <span class="option">dots</span>: <span class="result">true</span>,<br>
+                                    <span class="option">nav</span>: <span class="result">true</span>,<br>
+                                    <span class="option">stagePadding</span>: <span class="result">30</span>,<br>
+                                    <span class="option">smartSpeed</span>: <span class="result">450</span><br>
+                                </span>
+                                });
                             </p>
                         </div>
                     </div>

@@ -635,6 +635,7 @@ footer {
 
 .code .spacing {
     padding-left: 50px;
+    display: block;
 }
 
 .code .tolltip {
@@ -658,10 +659,16 @@ footer {
     padding: 0 2px;
     display: inline-block;
     width: auto;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
 
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+.code .tolltip .box.copy {
+    background: #db862c;
 }
 
 @keyframes pulse_loader {

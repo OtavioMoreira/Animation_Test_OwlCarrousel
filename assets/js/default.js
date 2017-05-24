@@ -27,9 +27,8 @@ $(document).ready(function () {
     }
 
     owl_effect(obj_animateOut, obj_animateIn);
-    owl_values( obj_animateOut, obj_animateIn );
+    owl_values(obj_animateOut, obj_animateIn);
 });
-
 
 $('#animateIn').change(function () {
     obj_animateIn = $(this).val();
@@ -37,6 +36,14 @@ $('#animateIn').change(function () {
 
 $('#animateOut').change(function () {
     obj_animateOut = $(this).val();
+});
+
+$('.code').click(function () {
+    copyToClipboard('.text-code');
+    $('.tolltip .box.effect').addClass('copy');
+    setTimeout(function () {
+        $('.tolltip .box.effect').removeClass('copy');
+    }, 500);
 });
 
 $('.btn-animate').click(function () {
@@ -49,10 +56,18 @@ $('.btn-animate').click(function () {
     });
 
     $owl.trigger('next.owl.carousel');
-    owl_values( obj_animateOut, obj_animateIn );
+    owl_values(obj_animateOut, obj_animateIn);
 });
 
-function owl_values( obj_animateOut, obj_animateIn) {
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+
+function owl_values(obj_animateOut, obj_animateIn) {
     $('[animateOut]').text("'" + obj_animateOut + "'");
     $('[animateIn]').text("'" + obj_animateIn + "'");
 }
