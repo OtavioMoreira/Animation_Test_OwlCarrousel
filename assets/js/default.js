@@ -27,6 +27,7 @@ $(document).ready(function () {
     }
 
     owl_effect(obj_animateOut, obj_animateIn);
+    owl_values( obj_animateOut, obj_animateIn );
 });
 
 
@@ -48,9 +49,15 @@ $('.btn-animate').click(function () {
     });
 
     $owl.trigger('next.owl.carousel');
+    owl_values( obj_animateOut, obj_animateIn );
 });
 
-function owl_effect( obj_animateOut, obj_animateIn) {
+function owl_values( obj_animateOut, obj_animateIn) {
+    $('[animateOut]').text("'" + obj_animateOut + "'");
+    $('[animateIn]').text("'" + obj_animateIn + "'");
+}
+
+function owl_effect(obj_animateOut, obj_animateIn) {
     $owl.owlCarousel({
         animateOut: obj_animateOut,
         animateIn: obj_animateIn,

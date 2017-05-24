@@ -599,6 +599,71 @@ footer {
     opacity: 0;
 }
 
+.no-pad-right {
+    padding-right: 0;
+}
+
+.code {
+    position: relative;
+    background: #272822;
+    height: auto;
+    color: white;
+    padding: 30px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+.code p {
+    margin: 0;
+}
+
+.code .virgula {
+    color: #fd971f;
+}
+
+.code .option,
+.code .cifrao {
+    color: #ae81ff;
+}
+
+.code .string {
+    color: #a6e22e;
+}
+
+.code .result {
+    color: #66d9ef;
+}
+
+.code .spacing {
+    padding-left: 50px;
+}
+
+.code .tolltip {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    color: #e4e4e4;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.code:hover .tolltip {
+    opacity: 1;
+}
+
+.code .tolltip .box {
+    background: #535351;
+    font-size: 12px;
+    padding: 0 2px;
+    display: inline-block;
+    width: auto;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
 @keyframes pulse_loader {
     to {
         transform: scale(0.8);
