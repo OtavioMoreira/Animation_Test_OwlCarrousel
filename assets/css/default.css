@@ -702,6 +702,9 @@ footer {
 .btn-img {
     background: #082034;
     white-space: normal;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
