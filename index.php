@@ -22,7 +22,6 @@
     <link rel="stylesheet" type="text/css" href="assets/plugins/owl-carousel/css/owl.theme.green.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/plugins/prism/prism.css">
     <link rel="stylesheet" type="text/css" href="assets/css/default.css?v=<?php echo time(); ?>">
 </head>
 
@@ -60,19 +59,50 @@
                             <div class="owl effect-carrousel owl-carousel owl-theme">
                                 <div class="item text-left dark-blue">
                                     <h4>1</h4>
+                                    <img class="img-send" img="0" src="" alt="">
                                 </div>
 
                                 <div class="item text-left blue">
                                     <h4>2</h4>
+                                    <img class="img-send" img="1" src="" alt="">
                                 </div>
 
                                 <div class="item text-left light-blue">
                                     <h4>3</h4>
+                                    <img class="img-send" img="2" src="" alt="">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row ajust">
+                        <div class="ajust ajust-pad">
+                            <div class="row img-select">
+                                <div class="col-md-12">
+                                    <button class="btn btn-img">Do you want to upload an image?</button>
+                                </div>
+                            </div>
+
+                            <div class="row img-select-type">
+                                <div class="col-md-4">
+                                    <span class="btn btn-default btn-file">
+                                        Upload image 1 <input type="file" class="img-upload" data-img="0">
+                                    </span>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <span class="btn btn-default btn-file">
+                                        Upload image 2 <input type="file" class="img-upload" data-img="1">
+                                    </span>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <span class="btn btn-default btn-file">
+                                        Upload image 3 <input type="file" class="img-upload" data-img="2">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row ajust-pad">
                             <div class="col-xs-6 col-md-4">
                                 <label for="" class="animated-name">AnimateOut</label>
                                 <select class="form-control" id="animateOut">
@@ -364,24 +394,26 @@
             </li>
         </ul>
     </section>
-
-    <section id="menu-projects" class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul id="owl-page-sync2" class="owl-carousel owl-theme text-center links no-style-list">
-                        <li class="text item active" data-item="home">Home</li>
-                        <li class="text item" data-item="animation">Animation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 
 <footer>
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <div id="menu-projects" class="text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul id="owl-page-sync2" class="owl-carousel owl-theme text-center links no-style-list">
+                                    <li class="text item active" data-item="home">Home</li>
+                                    <li class="text item" data-item="animation">Animation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-12">
                 <ul class="links">
                     <li><a class="text" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Contato</a>

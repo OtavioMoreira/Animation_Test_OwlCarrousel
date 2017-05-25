@@ -494,6 +494,7 @@ footer {
 
 #menu-projects {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .loader {
@@ -515,7 +516,27 @@ footer {
 
 .effect-carrousel .item {
     height: 15rem;
-    padding: 20px 30px;
+}
+
+.effect-carrousel .item img {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.effect-carrousel .item span {
+    height: 15rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.box-full {
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
 }
 
 .effect-carrousel .item.dark-blue {
@@ -523,22 +544,29 @@ footer {
 }
 
 .effect-carrousel .item.blue {
-    background: #1b2d3c;
-}
-
-.effect-carrousel .item.light-blue {
     background: #465969;
 }
 
+.effect-carrousel .item.light-blue {
+    background: #738ea5;
+}
+
 #owl-page-sync1 .ajust {
+    margin: 20px 0;
+}
+
+#owl-page-sync1 .ajust-pad {
     padding: 0 15px;
-    margin-top: 30px;
 }
 
 .effect-carrousel .item h4 {
     color: #FFF;
     font-weight: 500;
-    margin-top: 0rem;
+    margin-top: 0;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
 }
 
 .effect-carrousel.owl-theme .owl-dots .owl-dot span {
@@ -563,7 +591,7 @@ footer {
 }
 
 #owl-page-sync1 [item="animation"] .container {
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 #owl-page-sync1 [item="animation"] .container h3 {
@@ -671,6 +699,61 @@ footer {
     background: #db862c;
 }
 
+.btn-img {
+    background: #082034;
+    white-space: normal;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.btn-img:hover,
+.btn-img:focus {
+    color: white;
+    background: #0b2d49;
+}
+
+.img-select-type {
+    display: none;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-weight: normal;
+    font-size: 14px;
+    border: none;
+    background: #082034;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: white;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.btn-file:hover,
+.btn-file:focus {
+    background: #082034;
+    color: white;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
 @keyframes pulse_loader {
     to {
         transform: scale(0.8);
@@ -687,6 +770,10 @@ footer {
     #menu-projects {
         margin-top: 0;
     }
+
+    .code p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -701,6 +788,7 @@ footer {
 
     #owl-page-sync1 [item="animation"] .container h3 {
         margin-bottom: 15px;
+        margin-top: 30px;
     }
 }
 
