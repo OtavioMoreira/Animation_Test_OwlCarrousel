@@ -408,7 +408,7 @@
                             <div class="col-md-12">
                                 <ul id="owl-page-sync2" class="owl-carousel owl-theme text-center links no-style-list">
                                     <li class="text item active" data-item="home">Home</li>
-                                    <li class="text item" data-item="animation">Animation</li>
+                                    <li class="text item" data-item="animation">Example animations</li>
                                 </ul>
                             </div>
                         </div>
@@ -418,7 +418,7 @@
 
             <div class="col-md-12">
                 <ul class="links">
-                    <li><a class="text" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Contato</a>
+                    <li><a class="text" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Contact</a>
                     </li>
                     <li><a class="text" target="_blank"
                            href="https://www.facebook.com/otavio.mellomoreira?ref=br_rs">Facebook</a>
@@ -513,6 +513,17 @@
 <script type="text/javascript" src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/default.js?v=<?php echo time(); ?>"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-99956420-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 </body>
 
