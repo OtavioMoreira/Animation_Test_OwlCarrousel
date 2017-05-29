@@ -7,7 +7,8 @@ $(document).ready(function () {
         nav: false,
         dots: false,
         items: 1,
-        autoHeight: true
+        autoHeight: true,
+        mouseDrag: false
     })
 
     $('[data-item=animation]').click(function () {
